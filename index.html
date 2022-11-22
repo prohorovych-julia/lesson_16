@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zxx">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Lesson 15</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="header">
+                <div class="header__container">
+                </div>
+            </header>
+            <main class="page">
+                <section class="page-form form-first">
+                    <div class="page__container">
+                        <h1 class="form-first__title">Form</h1>
+                        <form class="form" action="#" method="GET">
+                            <div class="form__line">
+                                <label for="names" class="form__label">Ваше ім'я:</label>
+                                <input id="names" class="form__input" required name="name" placeholder="Введіть ваше ім'я" type="text">
+                            </div>
+                            <div class="form__line">
+                                <label for="password" class="form__label">Ваш пароль:</label>
+                                <input id="password" class="form__input" required name="pass" placeholder="Введіть ваш пароль" type="password">
+                            </div>
+                            <div class="form__line">
+                                <label for="contact" class="form__label">Ваша електрона адреса:</label>
+                                <input id="contact" class="form__input" required name="email" placeholder="Введіть вашу електрону адресу" type="email">
+                            </div>
+                            <div class="form__line">
+                                <label for="telephone" class="form__label">Ваш номер телефону:</label>
+                                <input id="telephone" class="form__input" required name="phone" placeholder="Введіть ваш номер телефону" type="tel">
+                            </div>
+                            <div class="form__line">
+                                <div class="form__title">Яку кухню полюбляєте:</div>
+                                <div class="form__block block-checkboxes">
+                                    <div class="block-checkboxes__items checkboxes-form">
+                                        <div class="checkboxes-form__block">
+                                            <input id="check-1" class="form__input form__input_check" required name="check" type="checkbox">
+                                            <label for="check-1" class="form__label checkbox__label"><span class="checkbox__text">Українська</span></label>
+                                        </div>
+                                        <div class="checkboxes-form__block">
+                                            <input id="check-2" class="form__input form__input_check" required name="check" type="checkbox">
+                                            <label for="check-2" class="form__label checkbox__label"><span class="checkbox__text">Італійська</span></label>
+                                        </div>
+                                    </div>
+                                    <div class="block-checkboxes__items checkboxes-form">
+                                        <div class="checkboxes-form__block">
+                                            <input id="check-3" class="form__input form__input_check" required name="check" type="checkbox">
+                                            <label for="check-3" class="form__label checkbox__label"><span class="checkbox__text">Азійська</span></label>
+                                        </div>
+                                        <div class="checkboxes-form__block">
+                                            <input id="check-4" class="form__input form__input_check" required name="check" type="checkbox">
+                                            <label for="check-4" class="form__label checkbox__label"><span class="checkbox__text">Французька</span></label>
+                                        </div>
+                                    </div>   
+                                </div>     
+                            </div>
+                            <div class="form__line">
+                                <div class="form__title">В якій країні проживаєте:</div>
+                                <div class="form__items items-form">
+                                    <div class="items-form__radio">
+                                        <input id="radio-1" class="form__input form__input_radio" required name="country" type="radio">
+                                        <label for="radio-1" class="form__label">Україна</label>
+                                    </div>
+                                    <div class="items-form__radio">
+                                        <input id="radio-2" class="form__input form__input_radio" required name="country" type="radio">
+                                        <label for="radio-2" class="form__label">Німеччина</label>
+                                    </div>
+                                    <div class="items-form__radio">
+                                        <input id="radio-3" class="form__input form__input_radio" required name="country" type="radio">
+                                        <label for="radio-3" class="form__label">Норвегія</label>
+                                    </div>
+                                    <div class="items-form__radio">
+                                        <input id="radio-4" class="form__input form__input_radio" required name="country" type="radio">
+                                        <label for="radio-4" class="form__label">Італія</label>
+                                    </div>
+                                </div>                  
+                            </div>
+                            <div class="form__line">
+                                <label for="slider" class="form__label">Заробітна плата, на яку претендуєте  за місяць (6700грн - 200000грн):</label>
+                                <input id="slider" class="form__input" name="salary" min="6700" max="200000" value="96000" type="range">
+                            </div>
+                            <div class="form__line">
+                                <label for="resume" class="form__label">Додати резюме</label>
+                                <input id="resume" class="form__input" name="file" type="file">
+                            </div>
+                            <div class="form__line">
+                                <div class="form__title">Ваш формат роботи:</div>
+                                <select name="items" id="list">
+                                    <option selected value="full-time">Повний робочий день</option>
+                                    <option value="part-time">Неповний робочий день</option>
+                                </select>
+                            </div>
+                            <div class="form__line">
+                                <button class="form__button" type="submit">Відправити форму</button>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+                <div class="page__container">
+                    <section class="page-form form-second">
+                        <div class="questions">
+                            <div class="questions__image">
+                                <img src="img/main/illustration.jpg" alt="Illustration">
+                            </div>
+                            <div class="questions__content content-block">
+                                <div class="questions__text text">
+                                    <p class="text__paragraph">Any questions?</p>
+                                    <h2 class="text__title">Drop us a line</h2>
+                                </div>
+                                <div class="questions__form form-information">
+                                    <form class="form-information__block" action="#" method="POST">
+                                        <div class="form-information__line line-first-name">
+                                            <label class="form-information__label" for="name">First Name*</label>
+                                            <input class="form-information__input" id="name" required placeholder="Your first name" name="first-name" type="text">
+                                        </div>
+                                        <div class="form-information__line line-last-name">
+                                            <label class="form-information__label" for="surname">Last Name*</label>
+                                            <input class="form-information__input" id="surname" required placeholder="Your last name" name="last-name" type="text">
+                                        </div>
+                                        <div class="form-information__line line-email">
+                                            <label class="form-information__label" for="contact-email">Email*</label>
+                                            <input class="form-information__input" id="contact-email" required placeholder="Your working email" name="email" type="email">
+                                        </div>
+                                        <div class="form-information__line line-phone">
+                                            <label class="form-information__label" for="contact-phone">Phone</label>
+                                            <input class="form-information__input" id="contact-phone" placeholder="Your phone number" name="phone" type="tel">
+                                        </div>
+                                        <div class="form-information__line line-message">
+                                            <label class="form-information__label" for="message">Message*</label>
+                                            <textarea name="message" required id="message" placeholder="Your message" cols="30" rows="10"></textarea>
+                                        </div>
+                                        <div class="form-information__line actions-block">
+                                            <div class="actions-block__checkbox">
+                                                <input class="actions-block__input" id="agree" name="agree" value="yes" type="checkbox">
+                                                <label class="actions-block__label" for="agree"><span class="actions-block__text">I agree to receive communications from Createx Online School</span></label>
+                                            </div>
+                                            <button class="actions-block__button button" type="submit"><span>Send message</span></button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </main>
+            <footer class="footer"></footer>
+        </div> 
+    </body>
+</html>

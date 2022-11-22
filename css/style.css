@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:regular,700,900&display=swap");
+
+body {
+    font-family: "Lato", sans-serif;
+}
+.wrapper {
+    overflow: hidden;
+    min-height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.wrapper>main {
+    flex-grow: 1;
+}
+
+/*---Обмежуючий контейнер---*/
+[class*="__container"] {
+    max-width: 1260px;
+    margin: 0 auto;
+    padding: 0 15px 0 15px;
+}
+/*=================*/
+
+.form-first {
+    padding: 40px 160px 80px 160px;
+    background-color: #747c9d;
+    color: #f1f2f7;
+}
+.form-first__title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #f2b898;
+    text-align: center;
+}
+.form-first__title:not(:last-child) {
+    margin-bottom: 24px;
+}
+.form {
+    font-family:  Helvetica, sans-serif;
+    font-size: 18px;
+}
+.block-checkboxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    column-gap: 10px;
+}
+
+.form__line:not(:last-child) {
+    margin-bottom: 20px;
+}
+.form__label {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.form__input {
+    width: 100%;
+    height: 50px;
+    padding: 0px 15px;
+}
+
+.form__input_check, .form__input_radio {
+    width: auto;
+    vertical-align: middle;
+    width: 15px;
+}
+.checkbox__label {
+    display: inline-block;
+}
+.checkbox__text {
+    align-self: center;
+}
+.items-form {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+}
+#slider {
+    width: 100%;
+    height: 8px;
+    border-radius: 3px;
+    outline: none;
+}
+#slider::-webkit-slider-thumb {
+    cursor: pointer;
+}
+
+.form__button {
+    background-color: #f2b898;
+    color: #565d7d;
+    padding: 10px 10px;
+    height: 52px;
+    border-radius: 3px;
+    transition: all 0.3s ease 0s;
+}
+.form__button:hover {
+    background-color: #f0905c;
+    color: #f1f2f7;
+    transform: translate(2px,0px);
+}
+/*=====================*/
+
+.form-second {
+    padding: 80px 0px 80px 0px;
+    color: #424551;
+}
+.page-form {
+}
+
+.questions {
+    display: flex;
+}
+.questions__image {
+    flex: 0 1 33.5%;
+}
+.questions__image img {
+    max-width: 107.8%;
+    transform: translate(-7.8%, 0px);
+}
+.questions__content {
+    flex: 0 1 66.5%;
+    padding-left: 105px;
+}
+.content-block {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    align-self: center;
+}
+.questions__form {
+}
+.questions__text {
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    color: #1E212C;
+}
+
+.text__paragraph {
+    font-weight: 700;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+.text__title {
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 1.3;
+}
+
+.form-information {
+    padding-bottom: 48px;
+}
+.form-information__block {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 25px;
+    row-gap: 24px;
+    justify-content: space-between;
+}
+.form-information__line {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+.form-information__line:last-child {
+    margin-top: 24px;  
+}
+.form-information__label {
+    color: #424551;
+    line-height: 1.6;
+}
+.form-information__input {
+    border: 1px solid #D7DADD;
+    border-radius: 4px;
+    height: 52px;
+    padding: 13px 16px;
+}
+
+.line-first-name {
+    flex: 0 1 340px;
+}
+.line-last-name {
+    flex: 0 1 340px;
+}
+.line-email {
+    flex: 0 1 340px;
+}
+.line-phone {
+    flex: 0 1 340px;
+}
+.line-message {
+    width: 100%;
+    
+}
+.line-message textarea {
+    border: 1px solid #D7DADD;
+    border-radius: 4px;
+    padding: 13px 16px;
+    height: 128px;
+    resize: vertical;
+} 
+
+.actions-block {
+    display: flex;
+    flex-direction: row;
+    column-gap: 50px;
+    flex-shrink: 0;
+    align-items: center;
+}
+.actions-block__checkbox {
+    position: relative;
+    /* align-items: center; */
+}
+.actions-block__input {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+.actions-block__input:checked + .actions-block__label::before {
+	background:#FF3F3A url('../img/icons/check.svg') center / 80% no-repeat;
+}
+.actions-block__label {
+    display: inline-flex;
+    gap: 15px;
+    cursor: pointer;
+    line-height: 1.6;
+}
+.actions-block__label::before {
+    content: "";
+    flex: 0 0 16px;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #FF3F3A;
+    border-radius: 3px;
+}
+.actions-block__text {
+    align-self: flex-start;
+}
+.actions-block__button {
+    flex: 0 0 340px;
+    letter-spacing: 0.5px;
+}
